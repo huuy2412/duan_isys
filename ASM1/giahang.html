@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="https://localbrand.vn/wp-content/uploads/2020/04/Logo-HADES.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="ASM1.css">
+    <link rel="stylesheet" href="giohang.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hd-nen">
+            <div class="hd-logo">
+                <img src="https://localbrand.vn/wp-content/uploads/2020/04/Logo-HADES.jpg" alt="">
+            </div>
+            <div class="hd-thongtin">          
+                <a href="dangky.html">ĐĂNG KÝ</a>                       
+                <a href="dangnhap.html">ĐĂNG NHẬP</a>                       
+                <a href="giahang.html">GIỎ HÀNG</a>                      
+                <a href="ASM1.html">QUAY LẠI</a>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="atc2-chudong">
+            <marquee>WELCOME TO THE BRAND</marquee>
+        </div>
+    </article>
+    <nav>
+        <script>
+            function changeImage(image) {
+                image.src = "https://theme.hstatic.net/1000306633/1001194548/14/slideshow_3.jpg?v=212";
+            }
+
+            function restoreImage(image) {
+                image.src = "https://theme.hstatic.net/1000306633/1001194548/14/slideshow_2.jpg?v=212";
+            }
+        </script>
+        <div class="nav-hinhto">
+            <img src="https://theme.hstatic.net/1000306633/1001194548/14/slideshow_2.jpg?v=212" 
+            alt="Image" class="change-image"
+            onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+        </div>
+    </nav>
+    <h1 style="text-align: center;">Giỏ Hàng</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Hình Ảnh</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Giá</th>
+                <th>Số Lượng</th>
+                <th>Tổng Cộng</th>
+                <th>Hành Động</th>
+            </tr>
+        </thead>
+        <tbody id="cartItems">
+            <!-- Cart items will be dynamically inserted here -->
+        </tbody>
+    </table>
+    <h2 id="cartTotal" style="margin-top: 20px;">Tổng: 0đ</h2>
+    <script>
+        // Function to format number to currency
+        function formatCurrency(amount) {
+            return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+        }
+
+        // Function to remove item from cart
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+        }
+
+        // Function to render cart items
+        function renderCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItems = document.getElementById('cartItems');
+            let cartTotal = document.getElementById('cartTotal');
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                let itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                let row = document.createElement('tr');
+                row.innerHTML = `
+                    <td><img src="${item.image}" alt="${item.name}"></td>
+                    <td>${item.name}</td>
+                    <td>${formatCurrency(item.price)}</td>
+                    <td>${item.quantity}</td>
+                    <td>${formatCurrency(itemTotal)}</td>
+                    <td><button onclick="removeFromCart(${index})">Xóa</button></td>
+                `;
+                cartItems.appendChild(row);
+            });
+
+            cartTotal.textContent = `Tổng: ${formatCurrency(total)}`;
+        }
+
+        // Initialize cart rendering
+        renderCart();
+    </script>
+        <article>
+            <div class="atc2-chudong">
+                <marquee>STREET WEAR BRAND LIMITED</marquee>
+            </div>
+        </article>
+        <footer>
+            <div class="ft-thongtinshop">
+                <div class="hethong">
+                    <h3>HỆ THỐNG CỬA HÀNG HADES</h3>
+                    <h4>HADES STUDIO FLAGSHIP STORE: 69 QUANG TRUNG STREET, GO VAP DISTRICT, HOCHIMINH.<br>
+                        Store 2: 26 LY TU TRONG STREET, DISTRICT 1, HOCHIMINH (THE NEW PLAYGROUND).<br>
+                        Store 3: 140 NGUYEN HY QUANG, DONG DA DISTRICT, HANOI.<br>
+                        Store 4: 4 PHAM NGU LAO STREET, DISTRICT 1, HOCHIMINH.<br>
+                        Store 5: 136 NGUYEN HONG DAO STREET, TAN BINH DISTRICT, HOCHIMINH.<br>
+                        Store 6: 56 MAU THAN, NINH KIEU DISTRICT, CANTHO.</h4>
+                </div>
+                <div class="chinhsach">
+                    <h3>CHÍNH SÁCH</h3>
+                    <h4>Chính sách sử dụng website<br>
+                        Phương thức thanh toán<br>
+                        Chính sách đổi trả<br>
+                        Chính sách giao nhận - vận chuyển<br>
+                        Điều khoản dịch vụ<br>
+                        Hướng dẫn mua hàng<br>
+                        Chính sách bảo mật</h4>
+                </div>
+                <div class="lienhe">
+                    <h3>THÔNG TIN LIÊN HỆ</h3>
+                    <h4>CÔNG TY TNHH HADES<br>
+                        SỐ CSKH: 02873011021 (10h -18h)<br>
+                        Ngày cấp: 20/07/2020<br>
+                        Tuyển dụng: hr@hades.vn<br>
+                        Website: hades.vn<br>
+                        For business: contact@hades.vn</h4>
+                </div>
+                <div class="fl">
+                    <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+                    <img src="hinhanh/dathongbao copy.webp" alt="">
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADES OF YISZ</title>
+    <link rel="icon" href="https://localbrand.vn/wp-content/uploads/2020/04/Logo-HADES.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="ASM1.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.875em;
+            margin-top: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hd-nen">
+            <div class="hd-logo">
+                <img src="https://localbrand.vn/wp-content/uploads/2020/04/Logo-HADES.jpg" alt="HADES Logo">
+            </div>
+            <div class="hd-thongtin">
+                <a href="dangky.html">ĐĂNG KÝ</a>
+                <a href="dangnhap.html">ĐĂNG NHẬP</a>
+                <a href="giahang.html">GIỎ HÀNG</a>
+                <a href="ASM1.html">QUAY LẠI</a>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="atc2-chudong">
+            <marquee>WELCOME TO THE BRAND</marquee>
+        </div>
+    </article>
+    <nav>
+        <script>
+            function changeImage(image) {
+                image.src = "https://theme.hstatic.net/1000306633/1001194548/14/slideshow_3.jpg?v=212"; // Change image source on hover
+            }
+
+            function restoreImage(image) {
+                image.src = "https://theme.hstatic.net/1000306633/1001194548/14/slideshow_2.jpg?v=212"; // Restore image source on mouse out
+            }
+        </script>
+        <div class="nav-hinhto">
+            <img src="https://theme.hstatic.net/1000306633/1001194548/14/slideshow_2.jpg?v=212" 
+                 alt="Image" class="change-image"
+                 onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+        </div>
+    </nav>
+
+    <article>
+        <div class="tong">
+            <div class="container">
+                <h1>Đăng nhập</h1>
+                <form id="loginForm">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập">
+                    <div id="usernameError" class="error-message"></div> <!-- Error message placeholder -->
+                    
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+                    <div id="passwordError" class="error-message"></div> <!-- Error message placeholder -->
+                    
+                    <button type="submit">Đăng nhập</button>
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="atc2-chudong">
+            <marquee>STREET WEAR BRAND LIMITED</marquee>
+        </div>
+    </article>
+
+    <footer>
+        <div class="ft-thongtinshop">
+            <div class="hethong">
+                <h3>HỆ THỐNG CỬA HÀNG HADES</h3>
+                <h4>HADES STUDIO FLAGSHIP STORE: 69 QUANG TRUNG STREET, GO VAP DISTRICT, HOCHIMINH.<br>
+                    Store 2: 26 LY TU TRONG STREET, DISTRICT 1, HOCHIMINH (THE NEW PLAYGROUND).<br>
+                    Store 3: 140 NGUYEN HY QUANG, DONG DA DISTRICT, HANOI.<br>
+                    Store 4: 4 PHAM NGU LAO STREET, DISTRICT 1, HOCHIMINH.<br>
+                    Store 5: 136 NGUYEN HONG DAO STREET, TAN BINH DISTRICT, HOCHIMINH.<br>
+                    Store 6: 56 MAU THAN, NINH KIEU DISTRICT, CANTHO.</h4>
+            </div>
+            <div class="chinhsach">
+                <h3>CHÍNH SÁCH</h3>
+                <h4>Chính sách sử dụng website<br>
+                    Phương thức thanh toán<br>
+                    Chính sách đổi trả<br>
+                    Chính sách giao nhận - vận chuyển<br>
+                    Điều khoản dịch vụ<br>
+                    Hướng dẫn mua hàng<br>
+                    Chính sách bảo mật</h4>
+            </div>
+            <div class="lienhe">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <h4>CÔNG TY TNHH HADES<br>
+                    SỐ CSKH: 02873011021 (10h -18h)<br>
+                    Ngày cấp: 20/07/2020<br>
+                    Tuyển dụng: hr@hades.vn<br>
+                    Website: hades.vn<br>
+                    For business: contact@hades.vn</h4>
+            </div>
+            <div class="fl">
+                <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+                <img src="hinhanh/dathongbao copy.webp" alt="Social Media">
+                <img src="" alt="Social Media" width="">
+            </div>
+        </div>
+    </footer> 
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Get form fields
+            var username = document.getElementById('username').value.trim();
+            var password = document.getElementById('password').value.trim();
+            
+            // Get error message elements
+            var usernameError = document.getElementById('usernameError');
+            var passwordError = document.getElementById('passwordError');
+            
+            // Clear previous error messages
+            usernameError.textContent = '';
+            passwordError.textContent = '';
+            
+            // Validation flags
+            var isValid = true;
+            
+            // Validation checks
+            if (username === '') {
+                usernameError.textContent = 'Vui lòng nhập tên đăng nhập.';
+                isValid = false;
+            }
+            if (password === '') {
+                passwordError.textContent = 'Vui lòng nhập mật khẩu.';
+                isValid = false;
+            }
+            
+            // Prevent form submission if validation fails
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

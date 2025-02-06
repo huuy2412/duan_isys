@@ -1,0 +1,151 @@
+
+    header {
+    background-color:rgb(233, 233, 233);
+    height: 150px;
+}
+
+.hd-nen {
+    display: flex;
+    justify-content: space-between; 
+}
+.hd-logo>img {
+    width: 300px;
+    height: 130px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.hd-thongtin {
+    margin-top: 50px;
+}
+.hd-thongtin a {
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;  
+}
+.hd-thongtin a:hover {
+    color: rgb(133, 129, 129);
+}
+
+.nav-hinhto img {
+    margin-top: 6px;
+    width: 100%;
+
+}
+.ac1-hinhnen img {
+    width: 100%;
+}
+.atc0-hinhnen1 img {
+    width: 100%;
+}
+.atc2-chudong marquee {
+    font-size: 5rem;
+    
+    color: rgb(255, 255, 255); /* Màu bên trong chữ */
+    -webkit-text-stroke: 1px black; /* Độ dày và màu viền */
+    text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        1px 1px 0 #000; /* Tạo thêm viền ngoài để rõ ràng hơn */
+}
+.atc1-hinhanh img {
+    height: 250px;
+}
+.ac1-hinhnen img {
+    width: 100%;
+}
+.atc0-hinhnen1 img {
+    width: 100%;
+}
+article {
+    background-color: rgb(225, 223, 221);
+}
+.atc1-thongtin {
+    float : left;
+    margin-left: 40px;
+}
+.atc1-thongtin h3 {
+    font-size: 2rem;
+}
+.atc1-thongtin h5 {
+
+}
+.atc1-hinhanh {
+    float : left ;
+    margin-left: 150px;
+}
+.atc1-menu {
+    float: left;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+.atc1-menu h6 {
+    font-size: 1rem;
+}
+.atc1-menu-size {
+    display: flex;
+    justify-content: space-between; 
+}
+.bangsize {
+    margin-top: 23px;
+}
+.atc1-menu h3 {
+    font-size: 1.5rem;
+}
+.themvohang {
+    margin-top: 10px;
+    text-align: center;
+}
+.muangay {
+    margin-top: 10px;
+    text-align: center;
+}
+.ft-thongtinshop {
+    float: left;
+}
+.ft-thongtinshop {
+
+    height: 200px;
+}
+.hethong {
+    float: left;
+    font-size: 14px;  
+    margin-left: 10px;
+}
+.chinhsach {
+    float: left;
+    font-size: 14px;   
+    margin-left: 18px;
+}
+.lienhe {
+    float: left;
+    font-size: 14px;    
+    margin-left: 20px;
+}
+footer {
+    margin-top: 15px;
+}
+.fl {
+    float: left;
+    font-size: 14px;   
+    margin-left: 40px;
+}
+.hethong>h4 {
+    color: rgb(62, 62, 62);
+    
+}
+.chinhsach>h4 {
+    color: rgb(62, 62, 62);
+ 
+}
+.lienhe>h4 {
+    color: rgb(62, 62, 62);
+}
+.fl img {
+    width: 140px;
+}
+.atc3-sp h4 a {
+    text-decoration: none;
+    color: black;
+}

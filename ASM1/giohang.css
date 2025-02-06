@@ -1,0 +1,156 @@
+header {
+    background-color:rgb(233, 233, 233);
+    height: 150px;
+}
+
+.hd-nen {
+    display: flex;
+    justify-content: space-between; 
+}
+.hd-logo>img {
+    width: 300px;
+    height: 130px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.hd-thongtin {
+    margin-top: 30px;
+    font-size: 15px;
+}
+.hd-thongtin a {
+
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:rgb(116, 116, 116);  
+    font-weight: 500;
+
+}
+.hd-thongtin a:hover {
+    color: rgb(133, 129, 129);
+}
+.hd-thongtin img {
+    font-size: 35px;
+}
+.nav-hinhto img {
+    margin-top: 6px;
+    width: 100%;
+
+}
+.ac1-hinhnen img {
+    width: 100%;
+}
+.atc0-hinhnen1 img {
+    width: 100%;
+
+}
+.atc0-hinhnen1 img:hover {
+    cursor: pointer;
+    
+}
+.atc2-chudong marquee {
+    font-size: 5rem;
+    margin-top: 10px;
+    
+    
+    color: rgb(255, 255, 255); /* Màu bên trong chữ */
+    -webkit-text-stroke: 1px black; /* Độ dày và màu viền */
+    text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        1px 1px 0 #000; /* Tạo thêm viền ngoài để rõ ràng hơn */
+}
+.atc3-sp {
+    float: left;
+    margin-left: 55px;
+}
+.atc3-sp img {
+    height: 400px;
+}
+
+.atc3-sp h4 {
+    text-align: center;
+}
+.atc3-sp h5 {
+    text-align: center;
+}
+.ft-thongtinshop {
+    float: left;
+}
+.ft-thongtinshop {
+
+    height: 200px;
+}
+.hethong {
+    float: left;
+    font-size: 14px;  
+    margin-left: 10px;
+}
+.chinhsach {
+    float: left;
+    font-size: 14px;   
+    margin-left: 18px;
+}
+.lienhe {
+    float: left;
+    font-size: 14px;    
+    margin-left: 20px;
+}
+footer {
+    margin-top: 20px;
+}
+.fl {
+    float: left;
+    font-size: 14px;   
+    margin-left: 40px;
+}
+.hethong>h4 {
+    color: rgb(62, 62, 62);
+    
+}
+.chinhsach>h4 {
+    color: rgb(62, 62, 62);
+ 
+}
+.lienhe>h4 {
+    color: rgb(62, 62, 62);
+}
+.fl img {
+    width: 140px;
+}
+.atc3-sp h4 a {
+    text-decoration: none;
+    color: black;
+}
+
+.tong {
+    text-align: center;
+    
+     /* Căn nội dung trong .tong theo chiều ngang */
+}
+.t-ten h3 {
+    font-size: 3rem;
+}
+.sanphamdat h5 {
+    font-size: 1.5rem;
+}
+.total h5 {
+    font-size: 1rem;
+}
+.xemgiohang input button {
+    width: 100px;
+    margin-top: 10px;
+}
+.thanhtoan input {
+    width: 100px;
+}
+/* Các style khác cho các phần tử trong .tong */
+.t-ten, .sanphamdat, .total, .xemgiohang, .thanhtoan {
+    margin-bottom: 10px;
+}.tong {
+    background-color: #dfdede;
+
+    height: 300px;
+}
+

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADES OF YISZ</title>
+    <link rel="icon" href="https://localbrand.vn/wp-content/uploads/2020/04/Logo-HADES.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="ASM1.css">
+    <link href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" rel="stylesheet">
+    <style>
+        .slider {
+                    position: relative;
+                    width: 100%;
+                    height:100%;
+                }
+                
+                .slider img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+        
+                .slider i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 2rem;
+                    color: #fff;
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+        
+                .slider .fa-less-than {
+                    left: 10px;
+                }
+        
+                .slider .fa-greater-than {
+                    right: 10px;
+                }
+                .act-dau-cuoi {
+                    position: absolute;top: 2130px;left: 45%;
+                    margin-left: 15px;
+                }
+            </style>
+</head>
+<body>
+<header>
+    <div class="hd-nen">
+        <div class="hd-logo">
+            <img src="https://localbrand.vn/wp-content/uploads/2020/04/Logo-HADES.jpg" alt="" >
+        </div>
+
+        <div class="hd-thongtin">          
+                <a href="dangky.html" >ĐĂNG KÝ</a>                       
+                <a href="dangnhap.html">ĐĂNG NHẬP</a>                       
+                <a href="giahang.html"><img src="../ASM1/hinhanh/giohang.png" alt=""></a>                      
+                <a href="ASM1.html"><img src="../ASM1/hinhanh/quaylai.png" alt=""></a>
+        </div>
+
+    </div>
+</header>
+<article>
+    
+    <!-- <marquee>Đây là văn bản chạy ngang!</marquee> -->
+     <div class="atc2-chudong">
+        <marquee>WELCOME TO THE BRAND </marquee>
+     </div>
+</article>
+<nav>
+    <script>
+        function changeImage(image) {
+            image.src = "https://theme.hstatic.net/1000306633/1001194548/14/slideshow_3.jpg?v=212" ; // Thay đổi nguồn ảnh khi di chuột vào
+        }
+
+        function restoreImage(image) {
+            image.src = "https://theme.hstatic.net/1000306633/1001194548/14/slideshow_2.jpg?v=212"; // Khôi phục nguồn ảnh khi di chuột ra
+        }
+    </script>
+    <div class="nav-hinhto">
+        <img src="https://theme.hstatic.net/1000306633/1001194548/14/slideshow_2.jpg?v=212" 
+        alt="Image" class="change-image"
+        onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+    </div>
+</nav>
+<article>
+    <div class="ac1-hinhnen">
+        <img src="hinhanh/Screenshot 2024-07-14 193218.png" alt="">
+    </div>
+</article>
+<article>
+        <div class="slider">
+            <img src="../ASM1/hinhanh/show_block_home_category_image_3_new.webp" alt="">
+            <i  class="fa-solid fa-less-than"></i>
+            <i  class="fa-solid fa-greater-than"></i>
+        </div>
+        <div class="act-dau-cuoi" style="position: absolute; top: 2450px;">
+            <button onclick="first()"><i class="fa-solid fa-record-vinyl"></i></button>
+            <button><i class="fa-solid fa-record-vinyl"></i></button>
+            <button><i class="fa-solid fa-record-vinyl"></i></button>
+            <button onclick="last()"><i class="fa-solid fa-record-vinyl"></i></button>
+
+        </div>
+
+    <script>
+        let imgSlider = document.querySelector('.slider img');
+        let icons = document.querySelectorAll('.slider i');
+        let imgArr = ['../ASM1/hinhanh/show_block_home_category_image_3_new.webp' , '../ASM1/hinhanh/hinhhades.webp' , '../ASM1/hinhanh/hades1.webp' ];
+        let index = 0 ;
+        function next() {
+            index++;
+            if ( index >= imgArr.length ){
+                index = 0 ; 
+            }
+            imgSlider.src = `../hinhanh/${imgArr[index]}`;
+        }
+        icons[1].addEventListener('click',next);
+        function previous() {
+            index-- ;
+            if ( index < 0){
+                index =imgArr.length -1 ;
+            }
+            imgSlider.src =`../hinhanh/${imgArr[index]}`;
+        }
+        icons[0].addEventListener('click',previous);
+    
+        // setInterval("next()",2000);// ảnh tự huyển động , bổ xung thêm tọa độ x,y 
+        // viết 1 hàm(function) khi click qua thì sẽ thay đổi tọa độ 
+    
+        function last() {
+            index =imgArr.length -1 ;
+            imgSlider.src =`../hinhanh/${imgArr[index]}`;
+        }
+    
+        function first() {
+            imgSlider.src = `../hinhanh/${imgArr[0]}`;
+        }
+    </script>
+</article>
+<article>
+    <!-- <marquee>Đây là văn bản chạy ngang!</marquee> -->
+     <div class="atc2-chudong">
+        <marquee>NEW ARRIVALS_
+            NEW ARRIVALS_
+            NEW ARRIVALS_ 
+            NEW ARRIVALS</marquee>
+     </div>
+</article>
+<article>
+    <div class="atc3-sanpham">
+
+<script>
+function vao(hinh) {
+    hinh.src = "https://product.hstatic.net/1000306633/product/hd_t6.2162_1c08afcb9c524972a36edb030b5c93d4.jpg" ; 
+}
+
+function ra(hinh) {
+    hinh.src = "https://product.hstatic.net/1000306633/product/hd-t55247_copy_b843312661f94221806b9ea6abd1cc67.jpg"; 
+}
+</script>
+        <div class="atc3-sp">
+            <img src="https://product.hstatic.net/1000306633/product/hd-t55247_copy_b843312661f94221806b9ea6abd1cc67.jpg" 
+            alt="hinh" class="change-hinh"
+            onmouseover="vao(this)" onmouseout="ra(this)">          
+            <h4><a href="sanpham1.html">HADES STUFFED WOLF TEE</a></h4>
+            <h5>470.000đ</h5>           
+        </div>
+
+
+<script>
+    function vao1(hinh1) {
+        hinh1.src = "https://product.hstatic.net/1000306633/product/hades_15sp8752_418b71b1c4a84ba6b41556ed9bf2f2d9.jpg" ; 
+    }
+
+    function ra1(hinh1) {
+        hinh1.src = "https://product.hstatic.net/1000306633/product/hades_15sp6459_f56b1b52184547be948ca85de8c6945b.jpg"; 
+    }
+</script>
+        <div class="atc3-sp">
+            <img src="https://product.hstatic.net/1000306633/product/hades_15sp6459_f56b1b52184547be948ca85de8c6945b.jpg" 
+            alt="hinh1" class="change-hinh1"
+            onmouseover="vao1(this)" onmouseout="ra1(this)">
+            <h4><a href="sanpham2.html">HADES SELECAO JERSEY</a> </h4>
+            <h5>490.000đ</h5>
+        </div>
+
+<script>
+    function vao2(hinh2) {
+        hinh2.src = "https://product.hstatic.net/1000306633/product/var7_94fde12670fc484bb9ec0c457da44e9e.jpg" ; 
+    }
+
+    function ra2(hinh2) {
+        hinh2.src = "https://product.hstatic.net/1000306633/product/var1_1e60f3df53744137a96de078f53bd08a.jpg"; 
+    }
+</script>
+        <div class="atc3-sp">
+            <img src="https://product.hstatic.net/1000306633/product/var1_1e60f3df53744137a96de078f53bd08a.jpg" 
+            alt="hinh2" class="change-hinh2"
+            onmouseover="vao2(this)" onmouseout="ra2(this)">
+            <h4><a href="sanpham3.html">HADES OBSTREP EROUS VARSITY JACKET</a></h4>
+            <h5>1.119.000đ</h5>
+        </div>
+
+<script>
+    function vao3(hinh3) {
+        hinh3.src = "https://product.hstatic.net/1000306633/product/hd_t6.2268_c6beaefcc80e4952b31cd32d21443bf6.jpg" ; 
+    }
+
+    function ra3(hinh3) {
+        hinh3.src = "https://product.hstatic.net/1000306633/product/hades3643_cb13a53f29284a49adb1163fa5a4de28.jpg"; 
+    }
+</script>
+        <div class="atc3-sp">
+            <img src="https://product.hstatic.net/1000306633/product/hades3643_cb13a53f29284a49adb1163fa5a4de28.jpg" 
+            alt="hinh3" class="change-hinh3"
+            onmouseover="vao3(this)" onmouseout="ra3(this)">
+            <h4><a href="sanpham4.html">HADES FENCE WASH JEANS</a></h4>
+            <h5>680.000đ</h5>
+        </div>
+    </div>
+</article>
+<br>
+<br>
+<article>
+<script>
+    function vao4(hinh4) {
+        hinh4.src = "https://product.hstatic.net/1000306633/product/hades_15sp9303_0092d063c7f7483f95bc01cd0085ba2a.jpg" ; 
+    }
+
+    function ra4(hinh4) {
+        hinh4.src = "https://product.hstatic.net/1000306633/product/hades_15sp9301_0d434600402f4005aa695b095fbf8eb4.jpg"; 
+    }
+</script>
+    <div class="atc3-sanpham">
+        <div class="atc3-sp">
+            <img src="https://product.hstatic.net/1000306633/product/hades_15sp9301_0d434600402f4005aa695b095fbf8eb4.jpg" 
+            alt="hinh4" class="change-hinh4"
+            onmouseover="vao4(this)" onmouseout="ra4(this)">
+            <h4><a href="sanpham5.html">HADES BACKPACK LEATHER 24</a></h4>
+            <h5>795.000đ</h5>
+        </div>
+
+
+<script>
+    function vao5(hinh5) {
+        hinh5.src = "https://product.hstatic.net/1000306633/product/hd_t53987_0d37c5dc663e4041bc923f9d667207be.jpg" ; 
+    }
+
+    function ra5(hinh5) {
+        hinh5.src = "https://product.hstatic.net/1000306633/product/hd_t53977_30e888701c6d4ae6ba5aebd2fe06c860.jpg"; 
+    }
+</script>
+        <div class="atc3-sp">
+            <img src="https://product.hstatic.net/1000306633/product/hd_t53977_30e888701c6d4ae6ba5aebd2fe06c860.jpg" 
+            alt="hinh5" class="change-hinh5"
+            onmouseover="vao5(this)" onmouseout="ra5(this)">
+            <h4><a href="sanpham6.html">HADES MASEOT CROSSDODY BAG</a></h4>
+            <h5>689.000đ</h5>
+        </div>
+
+
+<script>
+    function vao6(hinh6) {
+        hinh6.src = "https://product.hstatic.net/1000306633/product/hades_15sp2863_ecc3c064c5344625b5ee5fb0af01a801.jpg" ; 
+    }
+
+    function ra6(hinh6) {
+        hinh6.src = "https://product.hstatic.net/1000306633/product/hades_15sp2861_68d195870f744d1f97b92ece3161fd07.jpg"; 
+    }
+</script>
+        <div class="atc3-sp">
+            <img src="https://product.hstatic.net/1000306633/product/hades_15sp2861_68d195870f744d1f97b92ece3161fd07.jpg" 
+            alt="hinh6" class="change-hinh6"
+            onmouseover="vao6(this)" onmouseout="ra6(this)">
+            <h4><a href="sanpham7.html">HADES SPLINTERED PANTS</a></h4>
+            <h5>690.000đ</h5>
+        </div>
+
+
+<script>
+    function vao7(hinh7) {
+        hinh7.src = "https://product.hstatic.net/1000306633/product/hd_t6.2485_7abdd0b75b58448a8840cfcbdce3fa97.jpg" ; 
+    }
+
+    function ra7(hinh7) {
+        hinh7.src = "https://product.hstatic.net/1000306633/product/hades4395_077ba9adef624184a275125766c951a8.jpg"; 
+    }
+</script>
+        <div class="atc3-sp">
+            <img src="https://product.hstatic.net/1000306633/product/hades4395_077ba9adef624184a275125766c951a8.jpg" 
+            alt="hinh7" class="change-hinh7"
+            onmouseover="vao7(this)" onmouseout="ra7(this)">
+            <h4> <a href="sanpham8.html">HADES LOVE HARDER TEE</a></h4>
+            <h5>450.000đ</h5>
+        </div>
+    </div>
+</article>
+<article>
+    <!-- <marquee>Đây là văn bản chạy ngang!</marquee> -->
+     <div class="atc2-chudong">
+        <marquee>STREET WEAR BRAND LIMITED</marquee>
+     </div>
+</article>
+<footer>
+    <div class="ft-thongtinshop">
+        <div class="hethong">
+            <h3>HỆ THỐNG CỬA HÀNG HADES</h3>
+            <h4>HADES STUDIO FLAGSHIP STORE: 69 QUANG TRUNG STREET, GO VAP DISTRICT, HOCHIMINH.<br>
+                Store 2: 26 LY TU TRONG STREET, DISTRICT 1, HOCHIMINH (THE NEW PLAYGROUND).<br>
+                Store 3: 140 NGUYEN HY QUANG, DONG DA DISTRICT, HANOI.<br>
+                Store 4: 4 PHAM NGU LAO STREET, DISTRICT 1, HOCHIMINH.<br>
+                Store 5: 136 NGUYEN HONG DAO STREET, TAN BINH DISTRICT, HOCHIMINH.<br>
+                Store 6: 56 MAU THAN, NINH KIEU DISTRICT, CANTHO.</h4>
+        </div>
+        <div class="chinhsach">
+            <h3>CHÍNH SÁCH</h3>
+            <h4>Chính sách sử dụng website<br>
+                Phương thức thanh toán<br>
+                Chính sách đổi trả<br>
+                Chính sách giao nhận - vận chuyển<br>
+                Điều khoản dịch vụ<br>
+                Hướng dẫn mua hàng<br>
+                Chính sách bảo mật</h4>
+        </div>
+        <div class="lienhe">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <h4>CÔNG TY TNHH HADES<br>
+                SỐ CSKH: 02873011021 (10h -18h)<br>
+                Ngày cấp: 20/07/2020<br>
+                Tuyển dụng: hr@hades.vn<br>
+                Website: hades.vn<br>
+                For business: contact@hades.vn</h4>
+        </div>
+        <div class="fl">
+            <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+            <img src="hinhanh/dathongbao copy.webp" alt="">
+            <img src="" alt="" width="">
+        </div>
+
+    </div>
+</footer> 
+</body>
+</html>

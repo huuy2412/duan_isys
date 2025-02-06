@@ -1,0 +1,120 @@
+header {
+    background-color:rgb(233, 233, 233);
+    height: 150px;
+}
+
+.hd-nen {
+    display: flex;
+    justify-content: space-between; 
+}
+.hd-logo>img {
+    width: 300px;
+    height: 130px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.hd-thongtin {
+    margin-top: 30px;
+}
+.hd-thongtin a {
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;  
+}
+.hd-thongtin a:hover {
+    color: rgb(133, 129, 129);
+}
+
+.atc3-sp h4  {
+
+}
+.nav-hinhto img {
+    margin-top: 6px;
+    width: 100%;
+
+}
+.ac1-hinhnen img {
+    width: 100%;
+}
+.atc0-hinhnen1 img {
+    width: 100%;
+}
+.atc0-hinhnen1 img:hover {
+    cursor: pointer;
+    
+}
+.atc2-chudong marquee {
+    font-size: 5rem;
+    
+    color: rgb(255, 255, 255); /* Màu bên trong chữ */
+    -webkit-text-stroke: 1px black; /* Độ dày và màu viền */
+    text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        1px 1px 0 #000; /* Tạo thêm viền ngoài để rõ ràng hơn */
+}
+.atc3-sp {
+    float: left;
+    margin-left: 55px;
+}
+.atc3-sp img {
+    height: 400px;
+}
+
+.atc3-sp h4 {
+    text-align: center;
+}
+.atc3-sp h5 {
+    text-align: center;
+}
+.ft-thongtinshop {
+    float: left;
+}
+.ft-thongtinshop {
+
+    height: 200px;
+}
+.hethong {
+    float: left;
+    font-size: 14px;  
+    margin-left: 10px;
+}
+.chinhsach {
+    float: left;
+    font-size: 14px;   
+    margin-left: 18px;
+}
+.lienhe {
+    float: left;
+    font-size: 14px;    
+    margin-left: 20px;
+}
+footer {
+    margin-top: 15px;
+}
+.fl {
+    float: left;
+    font-size: 14px;   
+    margin-left: 40px;
+}
+.hethong>h4 {
+    color: rgb(62, 62, 62);
+    
+}
+.chinhsach>h4 {
+    color: rgb(62, 62, 62);
+ 
+}
+.lienhe>h4 {
+    color: rgb(62, 62, 62);
+}
+.fl img {
+    width: 140px;
+}
+.atc3-sp h4 a {
+    text-decoration: none;
+    color: black;
+}
+
